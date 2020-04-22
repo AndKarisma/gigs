@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Index route
-app.get('/', (req, res) => res.render('Index', { layout: 'landing'}));
+app.get('/', (req, res) => res.render('index', { layout: 'landing'}));
 
 //Gig routes
 app.use('/gigs',require('./routes/gigs'));
